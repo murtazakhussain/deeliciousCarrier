@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <module>
+            <name>deeliciouscarrier</name>
+            <displayName><![CDATA[Deelicious Carrier]]></displayName>
+            <version><![CDATA[1.0]]></version>
+            <description><![CDATA[Driving Distance based delivery module by CTPL, murtaza.hussain@converget.com]]></description>
+            <author><![CDATA[Murtaza Hussain]]></author>
+            <tab><![CDATA[shipping_logistics]]></tab>
+	<confirmUninstall>Are you sure you want to uninstall?</confirmUninstall>
+            <is_configurable>1</is_configurable>
+            <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+        </module>
