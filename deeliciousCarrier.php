@@ -4,16 +4,17 @@
 if (!defined('_PS_VERSION_'))
     exit;
 
-class MyModule extends CarrierModule {
+class deeliciouscarrier extends CarrierModule {
 
     public function __construct() {
-        $this->name = 'mymodule';
+        $this->name = 'deeliciouscarrier';
         $this->tab = 'shipping_logistics';
         $this->version = '1.0';
         $this->author = 'Murtaza Hussain';
         $this->need_instance = 1;
-        //$this->ps_versions_compliancy = array('min' => '1.5', 'max' => '1.5');
+        $this->ps_versions_compliancy = array('min' => '1.5', 'max' => '1.8');
         //$this->dependencies = array('blockcart');
+        // $this->trusted = false;
 
         parent::__construct();
 
@@ -60,7 +61,7 @@ class MyModule extends CarrierModule {
                 'id_zone' => 1,
                 'is_module' => true,
                 'shipping_external' => true,
-                'external_module_name' => 'mymodule',
+                'external_module_name' => 'deeliciouscarrier',
                 'need_range' => true
             )
         );
@@ -171,7 +172,7 @@ class MyModule extends CarrierModule {
         $this->context->smarty->assign(
                 array(
                     //'my_module_name' => Configuration::get('MYMODULE_NAME'),
-                    //'my_module_link' => $this->context->link->getModuleLink('mymodule', 'display'),
+                    //'my_module_link' => $this->context->link->getModuleLink('deeliciouscarrier', 'display'),
                     'id_address' => $params['address']->id
                 )
         );
@@ -339,4 +340,3 @@ class MyModule extends CarrierModule {
 
 }
 ?>
-
